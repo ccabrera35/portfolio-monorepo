@@ -18,22 +18,21 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.{" "}
-        <span className="font-medium">Ut enim</span>, ad minim veniam, quis
-        nostrud exercitation ullamco laboris{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        </span>
-        dolor in reprehenderit in voluptate velit{" "}
-        <span className="underline">love</span> the esse cillum dolore eu fugiat
-        nulla pariatur. My core stack is{" "}
+        My journey into web development began with a fascination for how
+        websites work and a desire to build my own. This led me to learn HTML,
+        CSS, and JavaScript, and I quickly found myself captivated by the
+        endless possibilities of{" "}
+        <span className="font-medium">web development. </span>I have{" "}
+        <span className="italic">hands-on experience </span>
+        with modern web technologies such as{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Next.js, Node.js, and MongoDB{" "}
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies.
+        and I'm well-versed in TypeScript and Prisma. I am continuously learning
+        and always eager to take on new challenges that push my abilities and
+        help me grow as a developer.{" "}
+        <span className="font-medium">Aside from coding, </span> I enjoy
+        traveling and exploring new places, and I love watching soccer matches.
       </p>
     </motion.section>
   );

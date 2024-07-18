@@ -39,36 +39,62 @@ export const projectsData = [
     title: "FurFriends",
     description:
       "Pet owners can input details to ensure personalized care when pets are dropped off at their daycare, making their stay comfortable and stress-free.",
-    tags: ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind", "Prisma"],
-    imageUrl: furfriendsImg
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Tailwind",
+      "Prisma"
+    ],
+    imageUrl: furfriendsImg,
+    githubUrl: "https://github.com/ccabrera35/furfriends",
+    url: "/furfriends",
+    // "https://catherinecabrera.com/furfriends"
   },
   {
     title: "CityVibe",
     description:
       "Discover concerts, festivals, and more in any city. Stay updated and never miss out on the excitement, whether you're a local or a traveler.",
-    tags: ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind", "Prisma"],
-    imageUrl: cityvibeImg
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Tailwind",
+      "Prisma"
+    ],
+    imageUrl: cityvibeImg,
+    githubUrl: "https://github.com/ccabrera35/cityvibe",
+    url: "cityvibe",
+    // "https://catherinecabrera.com/cityvibe"
   },
   {
     title: "DevHunt",
     description:
       "Users can search, filter and sort on this job board built for those seeking remote developer jobs.",
     tags: ["React", "TypeScript", "Tailwind", "PostgreSQL"],
-    imageUrl: devhuntImg
+    imageUrl: devhuntImg,
+    githubUrl: "https://github.com/ccabrera35/devhunt",
+    url: "/devhunt"
   },
   {
     title: "Sliding Puzzle",
     description:
       "Players can challenge themselves with timed sessions and enjoy a new puzzle experience each time, as the picture is randomly generated for added excitement.",
     tags: ["React", "TypeScript", "Tailwind", "Framer"],
-    imageUrl: slidingpuzzleImg
+    imageUrl: slidingpuzzleImg,
+    githubUrl: "https://github.com/ccabrera35/sliding-puzzle",
+    url: "/sliding-puzzle"
   },
   {
     title: "Wordly",
     description:
       "A Wordle clone that challenges players to guess the hidden word within a limited number of attempts.",
     tags: ["React", "TypeScript", "Tailwind"],
-    imageUrl: wordlyImg
+    imageUrl: wordlyImg,
+    githubUrl: "https://github.com/ccabrera35/wordle-clone",
+    url: "/wordly"
   }
 ] as const;
 

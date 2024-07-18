@@ -26,7 +26,7 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="/IMG_3566_Original 2.jpg"
+              src="/IMG_3566_Orig.jpg"
               alt="Cat portrait"
               width="192"
               height="192"
