@@ -11,11 +11,11 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/furfriends",
+        source: "/furfriends/:slug*",
         destination: "https://furfriends-pets.vercel.app/",
       },
       {
-        source: "/devhunt",
+        source: "/devhunt/:slug*",
         destination: "https://developerhunt.vercel.app/",
       },
       {
@@ -23,7 +23,7 @@ const nextConfig = {
         destination: "https://cityvibe.vercel.app/:slug*",
       },
       {
-        source: "/sliding-puzzle",
+        source: "/sliding-puzzle/:slug*",
         destination: "https://sliding-puzzle-omega.vercel.app",
       }
     ];
