@@ -19,8 +19,8 @@ const nextConfig = {
         destination: "https://developerhunt.vercel.app/",
       },
       {
-        source: "/cityvibe",
-        destination: "https://cityvibe.vercel.app/",
+        source: "/cityvibe/:slug*",
+        destination: "https://cityvibe.vercel.app/:slug*",
       },
       {
         source: "/sliding-puzzle",
