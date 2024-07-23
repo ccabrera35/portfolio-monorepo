@@ -12,11 +12,11 @@ const nextConfig = {
     return [
       {
         source: "/furfriends/:slug*",
-        destination: "https://furfriends-pets.vercel.app/",
+        destination: "https://furfriends-pets.vercel.app/:slug*",
       },
       {
         source: "/devhunt/:slug*",
-        destination: "https://developerhunt.vercel.app/",
+        destination: "https://developerhunt.vercel.app/:slug*",
       },
       {
         source: "/cityvibe/:slug*",
@@ -24,7 +24,7 @@ const nextConfig = {
       },
       {
         source: "/sliding-puzzle/:slug*",
-        destination: "https://sliding-puzzle-omega.vercel.app",
+        destination: "https://sliding-puzzle-omega.vercel.app/:slug*",
       }
     ];
   }
