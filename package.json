@@ -1,16 +1,17 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-repo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "dev:portfolio": "turbo run dev --filter=portfolio",
+    "dev:furfriends": "turbo run dev --filter=furfriends",
+    "dev:cityvibe": "turbo run dev --filter=cityvibe",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@react-email/components": "^0.0.19",
-    "@react-email/tailwind": "^0.0.18",
     "@types/node": "20.14.2",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
@@ -29,5 +30,13 @@
     "resend": "^0.16.0",
     "tailwindcss": "3.4.4",
     "typescript": "5.4.5"
-  }
+  },
+  "devDependencies": {
+    "turbo": "^2.0.9"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "npm@10.0.0"
 }

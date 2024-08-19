@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/furfriends/:match*",
+      "destination": "/apps/furfriends/:match*"
+    },
+    {
+      "source": "/cityvibe/:match*",
+      "destination": "/apps/cityvibe/:match*"
+    },
+    {
+      "source": "/:match*",
+      "destination": "/apps/portfolio/:match*"
+    }
+  ]
+}
