@@ -7,8 +7,8 @@ const nextConfig = {
   experimental: {
     serverActions: {
       allowedOrigins: [
-        "portfolio-monorepo-omega.vercel.app",
-        "portfolio-monorepo-omega.vercel.app/*",
+        "catherinecabrera.com",
+        "catherinecabrera.com/*",
         "furfriends-monorepo.vercel.app",
         "furfriends-monorepo.vercel.app/*"
       ]
