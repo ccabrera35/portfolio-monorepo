@@ -9,7 +9,6 @@ import {
 } from "portfolio/lib/hooks";
 import { FaGithubSquare } from "react-icons/fa";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-// import { useActiveSectionContext } from "@/contexts/ActiveSectionContextProvider";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);

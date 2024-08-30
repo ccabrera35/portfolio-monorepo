@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, createContext, useContext } from "react";
+import React, { useState, createContext } from "react";
 import { links } from "portfolio/lib/data";
 
 type ActiveSectionContextProviderProps = {
@@ -39,14 +39,3 @@ export default function ActiveSectionContextProvider({
     </ActiveSectionContext.Provider>
   );
 }
-
-// export function useActiveSectionContext() {
-//   const context = useContext(ActiveSectionContext);
-
-//   if (!context) {
-//     throw new Error(
-//       "usActiveSectionContext must be used within an ActiveSectionContextProvider"
-//     );
-//   }
-//   return context;
-// }

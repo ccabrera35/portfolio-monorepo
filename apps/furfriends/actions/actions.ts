@@ -21,7 +21,7 @@ export async function logIn(prevState: unknown, formData: unknown) {
   }
 
   try {
-    await signIn("credentials", formData, { callbackUrl: "/app/dashboard" });
+    await signIn("credentials", formData, { callbackUrl: "/furfriends/app/dashboard" });
   } catch (error) {
     if (error instanceof AuthError) {
       switch (error.type) {

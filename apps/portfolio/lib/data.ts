@@ -1,10 +1,3 @@
-// import png of past projects
-/*
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-*/
-
 // import wordlyImg from "@/public/wordly.png";
 import devhuntImg from "../public/devhunt.png";
 import cityvibeImg from "../public/cityvibe.png";
@@ -50,7 +43,6 @@ export const projectsData = [
     imageUrl: furfriendsImg,
     githubUrl: "https://github.com/ccabrera35/furfriends",
     url: "/furfriends",
-    // "https://catherinecabrera.com/furfriends"
   },
   {
     title: "CityVibe",
@@ -67,7 +59,6 @@ export const projectsData = [
     imageUrl: cityvibeImg,
     githubUrl: "https://github.com/ccabrera35/cityvibe",
     url: "/cityvibe",
-    // "https://catherinecabrera.com/cityvibe"
   },
   {
     title: "DevHunt",

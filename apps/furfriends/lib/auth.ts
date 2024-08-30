@@ -6,7 +6,7 @@ import { authSchema } from "./validations";
 
 export const config = {
   pages: {
-    signIn: "/login"
+    signIn: "/furfriends/login"
   },
   providers: [
     Credentials({
@@ -51,7 +51,7 @@ export const config = {
       }
 
       if (isLoggedIn && isTryingToAccessApp && !auth?.user.hasAccess) {
-        return Response.redirect(new URL("/payment", request.nextUrl));
+        return Response.redirect(new URL("/furfriends/payment", request.nextUrl));
       }
 
       if (isLoggedIn && isTryingToAccessApp && auth?.user.hasAccess) {
@@ -59,12 +59,12 @@ export const config = {
       }
 
       if (isLoggedIn && (isLoginPath || isSignupPath) && auth?.user.hasAccess) {
-        return Response.redirect(new URL("/app/dashboard", request.nextUrl));
+        return Response.redirect(new URL("/furfriends/app/dashboard", request.nextUrl));
       }
 
       if (isLoggedIn && !isTryingToAccessApp && !auth?.user.hasAccess) {
         if (isLoginPath || isSignupPath) {
-          return Response.redirect(new URL("/payment", request.nextUrl));
+          return Response.redirect(new URL("/furfriends/payment", request.nextUrl));
         }
 
         return true;

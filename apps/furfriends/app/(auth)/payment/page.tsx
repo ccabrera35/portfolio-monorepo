@@ -23,7 +23,7 @@ export default function Page({
           disabled={status === "loading" || session?.user.hasAccess}
           onClick={async () => {
             await update(true);
-            router.push("/app/dashboard");
+            router.push("/furfriends/app/dashboard");
           }}
         >
           Access FurFriends

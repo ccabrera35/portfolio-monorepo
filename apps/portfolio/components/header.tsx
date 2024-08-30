@@ -1,9 +1,9 @@
 "use client";
+
+import clsx from "clsx";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { links } from "portfolio/lib/data";
-import Link from "next/link";
-import clsx from "clsx";
-// import { useActiveSectionContext } from "@/contexts/ActiveSectionContextProvider";
 import { useActiveSectionContext } from "portfolio/lib/hooks";
 
 export default function Header() {
@@ -34,7 +34,6 @@ export default function Header() {
                   {
                     "text-gray-950 dark:text-gray-200":
                       activeSection === link.name
-                    // "text-gray-950 underline underline-offset-[6px] decoration-4 decoration-[#f9f4b2]/90 decoration-[#fddae8]/55": activeSection === link.name
                   }
                 )}
                 onClick={() => {
@@ -59,5 +58,3 @@ export default function Header() {
   );
 }
 
-// bg-[#f9f4b2]/40 yellow
-// pink bg-[#fddae8]/25

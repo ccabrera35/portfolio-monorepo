@@ -8,7 +8,7 @@ import prisma from "./db";
 export async function checkAuth() {
   const session = await auth();
   if (!session?.user) {
-    redirect("/login");
+    redirect("/furfriends/login");
   }
 
   return session;

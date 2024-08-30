@@ -6,8 +6,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const routes = [
-  { label: "Dashboard", path: "/app/dashboard" },
-  { label: "Account", path: "/app/account" }
+  { label: "Dashboard", path: "/furfriends/app/dashboard" },
+  { label: "Account", path: "/furfriends/app/account" }
 ];
 
 export default function Header() {

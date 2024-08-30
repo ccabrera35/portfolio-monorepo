@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/furfriends/:match*",
+      "destination": "https://furfriends-monorepo.vercel.app/:match*"
+    },
+    {
+      "source": "/:match*",
+      "destination": "/apps/portfolio/:match*"
+    }
+  ]
+}

@@ -21,10 +21,10 @@ export default function Home() {
         </p>
         <div className="flex justify-center sm:justify-start mt-10 space-x-3">
           <Button asChild>
-            <Link href="/signup">Get started</Link>
+            <Link href="/furfriends/signup">Get started</Link>
           </Button>
           <Button asChild variant="secondary">
-            <Link href="/login">Log in</Link>
+            <Link href="/furfriends/login">Log in</Link>
           </Button>
         </div>
       </div>
