@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import SubmitBtn from "./submit-btn";
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
-import { useSectionInView } from "portfolio/lib/hooks";
+import { useSectionInView } from "lib/hooks";
 import { sendEmail } from "actions/sendEmail";
 import { useRef } from "react";
 

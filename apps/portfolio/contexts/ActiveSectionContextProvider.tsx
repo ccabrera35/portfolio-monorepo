@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, createContext } from "react";
-import { links } from "portfolio/lib/data";
+import { links } from "lib/data";
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;

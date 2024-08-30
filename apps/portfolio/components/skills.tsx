@@ -1,8 +1,8 @@
 "use client";
 
 import SectionHeading from "./section-heading";
-import { skillsData } from "portfolio/lib/data";
-import { useSectionInView } from "portfolio/lib/hooks";
+import { skillsData } from "lib/data";
+import { useSectionInView } from "lib/hooks";
 import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {

@@ -2,8 +2,8 @@
 
 import React from "react";
 import { Resend } from "resend";
-import ContactFormEmail from "portfolio/email/contact-form-email";
-import { getErrorMessage, validateString } from "portfolio/lib/utils";
+import { getErrorMessage, validateString } from "lib/utils";
+import ContactFormEmail from "email/contact-form-email";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -27,7 +27,7 @@ export const sendEmail = async (formData: FormData) => {
     await resend.emails.send({
       // connect my own domain
       from: "Contact Form <onboarding@resend.dev>",
-      to: "catheria12@gmail.com",
+      to: `${process.env.PERSONAL_EMAIL}`,
       subject: "Message from contact form",
       reply_to: senderEmail as string,
       react: React.createElement(ContactFormEmail, {

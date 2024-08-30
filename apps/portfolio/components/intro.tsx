@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   useActiveSectionContext,
   useSectionInView
-} from "portfolio/lib/hooks";
+} from "lib/hooks";
 import { FaGithubSquare } from "react-icons/fa";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 

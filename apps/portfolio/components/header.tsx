@@ -3,8 +3,8 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { links } from "portfolio/lib/data";
-import { useActiveSectionContext } from "portfolio/lib/hooks";
+import { links } from "lib/data";
+import { useActiveSectionContext } from "lib/hooks";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
