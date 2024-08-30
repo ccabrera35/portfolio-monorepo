@@ -1,9 +1,8 @@
+import Link from "next/link";
+import Image from "next/image";
 import Logo from "components/logo";
 import { Button } from "components/ui/button";
-import Image from "next/image";
-import Link from "next/link";
 import snapshot from "../../public/fur-friends.png"
-// "../../../public/fur-friends.png"
 
 export default function Home() {
   return (
