@@ -20,7 +20,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} text-sm text-zinc-900 bg-[#E5E8EC] min-h-screen`}
       >
-        <SessionProvider>{children}</SessionProvider>
+        <SessionProvider basePath="/furfriends/api/auth">{children}</SessionProvider>
       </body>
     </html>
   );
