@@ -21,7 +21,9 @@ export async function logIn(prevState: unknown, formData: unknown) {
   }
 
   try {
-    await signIn("credentials", formData, { callbackUrl: "/furfriends/app/dashboard" });
+    await signIn("credentials", formData, {
+      callbackUrl: `${process.env.CANONICAL_URL}/furfriends/app/dashboard`
+    });
   } catch (error) {
     if (error instanceof AuthError) {
       switch (error.type) {
@@ -89,7 +91,7 @@ export async function signUp(prevState: unknown, formData: unknown) {
 }
 
 export async function logOut() {
-  await signOut({ redirectTo: "/" });
+  await signOut({ redirectTo: "/furfriends" });
 }
 
 export async function addPet(pet: unknown) {
