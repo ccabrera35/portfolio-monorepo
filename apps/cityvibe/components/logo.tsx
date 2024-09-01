@@ -1,15 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../public/cityvibe-logo.svg";
 
 export default function Logo() {
   return (
     <Link href="/">
-      {/* <Image
-        src="/../../public/designer.png"
-        alt="cityvibe logo"
-        width={53}
-        height={12}
-      /> */}
+      <Image src={logo} alt="cityvibe logo" />
     </Link>
   );
 }

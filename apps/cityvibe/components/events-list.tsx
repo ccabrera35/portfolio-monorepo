@@ -19,7 +19,7 @@ export default async function EventsList({ city, page = 1 }: EventsListProps) {
     return (
       <p>
         No results were found! &nbsp;
-        <Link href="/" className="text-blue-500">
+        <Link href="/cityvibe" className="text-blue-500">
           Try searching for something else.
         </Link>
       </p>
