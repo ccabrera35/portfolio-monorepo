@@ -5,6 +5,10 @@
       "destination": "https://furfriends-monorepo.vercel.app/:match*"
     },
     {
+      "source": "/cityvibe/:match*",
+      "destination": "https://cityvibe-monorepo.vercel.app/:match*"
+    },
+    {
       "source": "/:match*",
       "destination": "/apps/portfolio/:match*"
     }
