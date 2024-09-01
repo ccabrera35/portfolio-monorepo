@@ -15,14 +15,6 @@ const nextConfig = {
       }
     ]
   },
-  experimental: {
-    serverActions: {
-      allowedOrigins: [
-        "catherinecabrera.com",
-        "catherinecabrera.com/*",
-      ]
-    }
-  }
 };
 
 module.exports = nextConfig;
