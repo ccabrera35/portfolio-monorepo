@@ -5,6 +5,10 @@
       "destination": "https://furfriends-monorepo.vercel.app/:match*"
     },
     {
+      "source": "/devhunt/:match*",
+      "destination": "https://devhunt-monorepo.vercel.app/:match*"
+    },
+    {
       "source": "/cityvibe/:match*",
       "destination": "https://cityvibe-monorepo.vercel.app/:match*"
     },
