@@ -13,7 +13,6 @@ export default function Sorting() {
         icon={faArrowDownShortWide}
         className="text-[11px] text-[#4c4f50] mr-[5px]"
       />
-      {/* <i className="fa-solid fa-arrow-down-short-wide text-[11px] text-[#4c4f50] mr-[5px]"></i> */}
       <SortingButton
         onClick={() => handleSortByChange("relevant")}
         isActive={sortBy === "relevant"}

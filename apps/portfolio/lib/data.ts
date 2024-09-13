@@ -64,7 +64,7 @@ export const projectsData = [
     title: "DevHunt",
     description:
       "Users can search, filter and sort on this job board built for those seeking remote developer jobs.",
-    tags: ["React", "TypeScript", "Tailwind", "PostgreSQL"],
+    tags: ["React", "TypeScript", "Tailwind", "PostgreSQL", "Next.js"],
     imageUrl: devhuntImg,
     githubUrl: "https://github.com/ccabrera35/devhunt",
     url: "/devhunt"

@@ -25,15 +25,6 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
 
 @layer utilities {
   .text-balance {
@@ -58,6 +49,3 @@ body::-webkit-scrollbar {
   background-color: #b1b4b8;
 }
 
-/* .search input::selection {
-  background-color: rgba(58, 213, 15, 0.25);
-} */

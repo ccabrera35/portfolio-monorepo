@@ -100,7 +100,6 @@ export default function JobItemContent() {
             </div>
           </div>
         </section>
-        {/* className="job-details__other" */}
         <div>
           <section className="flex pl-[42px] pr-[42px] mb-[30px]">
             <div className="mr-[35px]">
@@ -164,7 +163,7 @@ function LoadingJobContent() {
   return (
     <section className="flex-1 overflow-scroll relative bg-[#eff2f5] rounded-tr-[12px] rounded-br-[8px]">
       <div className="h-full">
-        <Spinner />
+        <Spinner className="mx-auto"/>
       </div>
     </section>
   );
