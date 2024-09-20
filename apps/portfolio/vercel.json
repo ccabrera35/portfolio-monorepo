@@ -13,6 +13,10 @@
       "destination": "https://cityvibe-monorepo.vercel.app/:match*"
     },
     {
+      "source": "/sliding-puzzle/:match*",
+      "destination": "https://sliding-puzzle-monorepo.vercel.app/:match*"
+    },
+    {
       "source": "/:match*",
       "destination": "/apps/portfolio/:match*"
     }
