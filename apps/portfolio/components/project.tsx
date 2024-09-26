@@ -52,18 +52,18 @@ export default function Project({
               </li>
             ))}
           </ul>
-
-          <Link href={url}>click me</Link>
         </div>
-        <Image
-          alt={title}
-          src={imageUrl}
-          quality={95}
-          onClick={() => setFlipped(!flipped)}
-          className={clsx(
-            "absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
-          )}
-        />
+        <Link href={url}>
+            <Image
+              alt={title}
+              src={imageUrl}
+              quality={95}
+              onClick={() => setFlipped(!flipped)}
+              className={clsx(
+                "absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+              )}
+            />
+        </Link>
       </section>
     </motion.div>
   );
