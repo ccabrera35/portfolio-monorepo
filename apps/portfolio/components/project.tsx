@@ -49,7 +49,7 @@ export default function Project({
        
         <div className="
           pt-4 pb-7 px-5 
-          md:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] 
+          lg:pl-6 sm:pr-2 sm:pt-10 sm:max-w-[50%] 
           flex flex-col h-full 
           md:group-even:pl-3 
           sm:group-even:ml-[12rem] 
@@ -62,7 +62,7 @@ export default function Project({
             {tags.map((tag, idx) => (
               <li
                 key={idx}
-                className="bg-slate-950/[0.7] tracking-wider sm:px-1 sm:py-[2px] px-3 py-1 text-[0.7rem] md:px-3 md:py-1 sm:text-[0.6rem] md:text-[0.7rem] uppercase sm:tracking-tight md:tracking-wider text-white rounded-full dark:text-white/70"
+                className="bg-slate-950/[0.7] tracking-wider sm:px-1 sm:py-[2px] px-3 py-1 text-[0.7rem] lg:px-3 lg:py-1 sm:text-[0.6rem] lg:text-[0.7rem] uppercase sm:tracking-tight md:tracking-wider text-white rounded-full dark:text-white/70"
               >
                 {tag}
               </li>
