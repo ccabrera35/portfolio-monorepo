@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef } from "react";
 import Link from "next/link";
+import { useRef } from "react";
 import Image from "next/image";
 import { Event } from "@prisma/client";
 import { motion, useScroll, useTransform } from "framer-motion";
