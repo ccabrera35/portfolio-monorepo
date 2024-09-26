@@ -1,5 +1,9 @@
 export default function Sidebar({ children }: { children: React.ReactNode }) {
-  return <div className="w-[340px] flex flex-col">{children}</div>;
+  return (
+    <div className="w-[300px] sm:w-full md:w-[340px] flex flex-col">
+      {children}
+    </div>
+  );
 }
 
 export function SidebarTop({ children }: { children: React.ReactNode }) {

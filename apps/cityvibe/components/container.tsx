@@ -1,6 +1,6 @@
 type ContainerProps = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 export default function Container({ children }: ContainerProps) {
   return (
@@ -9,4 +9,3 @@ export default function Container({ children }: ContainerProps) {
     </div>
   );
 }
-

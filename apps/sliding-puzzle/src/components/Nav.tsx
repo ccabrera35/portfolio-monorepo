@@ -47,7 +47,7 @@ export const Nav: FC<any> = () => {
       </div>
       {isOpen && (
         <motion.div
-          className={`flex flex-col items-center absolute text-lg left-0 top-12 w-72 h-screen border-r-2 border-r-[#6aa4f4] bg-[#6aa4f4]/90 dark:border-r-[#2D3250] dark:bg-[#2D3250]/90`}
+          className={`flex flex-col items-center absolute text-lg left-0 top-12 w-72 h-screen border-r-2 border-r-[#6aa4f4] bg-[#6aa4f4] lg:bg-[#6aa4f4]/90 dark:border-r-[#2D3250] dark:bg-[#2D3250] lg:dark:bg-[#2D3250]/90 `}
           animate={isOpen ? "open" : "closed"}
           initial={{ x: 0, y: -5, opacity: 0 }}
           style={menuStyle}

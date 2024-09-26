@@ -24,10 +24,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
     <html lang="en">
-      <body className={`${inter.className} leading-snug bg-[#dee3e9] text-dark-gray min-h-screen relative max-lg:px-3 max-lg:pb-[50px]`}>
+      <body className={`${inter.className} leading-snug bg-[#dee3e9] text-[rgb(22, 24, 28)] min-h-screen relative`}>
         <QueryProvider>
           <BookmarksContextProvider>
             <ActiveIdContextProvider>

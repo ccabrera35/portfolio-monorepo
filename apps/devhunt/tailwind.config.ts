@@ -14,10 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
       },
       colors: {
-        "dark-gray": 'rgb(22, 24, 28)'
-      },
-      screens: {
-        'max-lg': { 'max': '1007px' },
+        "dark-gray": "rgb(22, 24, 28)"
       },
       animation: {
         spinner: "spinner 1s linear infinite"

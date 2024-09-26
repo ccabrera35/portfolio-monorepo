@@ -3,11 +3,11 @@
 import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { events } from "@prisma/client";
+import { Event } from "@prisma/client";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 type EventCardProps = {
-  event: events;
+  event: Event;
 };
 
 const MotionLink = motion(Link);

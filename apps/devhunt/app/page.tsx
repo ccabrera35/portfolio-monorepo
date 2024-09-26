@@ -19,8 +19,7 @@ export default function Home() {
           <PaginationControls />
         </Sidebar>
         <JobItemContent />
-      </Container>
-     
+      </Container>   
     </>
   );
 }

@@ -32,11 +32,11 @@ export default function JobListItem({ jobItem, isActive }: JobListItemProps) {
           "flex h-full w-full px-5 py-[14px]"
         )}
       >
-        <div className="badge flex justify-center items-center font-semibold bg-[#1467af] text-[13px] h-[46px] w-[38px]  mr-[13px] rounded-[5px]">
+        <div className="badge flex justify-center items-center font-semibold bg-[#1467af] text-[13px] h-[46px] w-[38px] mr-[13px] rounded-[5px]">
           {badge_letters}
         </div>
 
-        <div className="job-item__middle">
+        <div>
           <h3 className="leading-tight mt-1 font-medium text-[15px]">{title}</h3>
           <p className="text-[13px] italic">{company}</p>
         </div>

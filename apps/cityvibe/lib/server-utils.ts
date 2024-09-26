@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { unstable_cache } from "next/cache";
 
 export const getEvents = unstable_cache(async (city: string, page = 1) => {
-  const events = await prisma.events.findMany({
+  const events = await prisma.event.findMany({
     skip: (page - 1) * 6, 
     take: 6,
     where: {
@@ -19,9 +19,9 @@ export const getEvents = unstable_cache(async (city: string, page = 1) => {
 
   let totalCount;
   if (city === "all") {
-    totalCount = await prisma.events.count();
+    totalCount = await prisma.event.count();
   } else {
-    totalCount = await prisma.events.count({
+    totalCount = await prisma.event.count({
       where: {
         city: capitalize(city)
       }
@@ -32,7 +32,7 @@ export const getEvents = unstable_cache(async (city: string, page = 1) => {
 });
 
 export const getEvent = unstable_cache(async (slug: string) => {
-  const event = await prisma.events.findUnique({
+  const event = await prisma.event.findUnique({
     where: {
       slug: slug
     }

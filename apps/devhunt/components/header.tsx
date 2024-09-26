@@ -12,6 +12,7 @@ export default function Header({ children }: { children?: React.ReactNode }) {
         <BookmarksButton />
       </HeaderTop>
       <SearchForm />
+
     </header>
   );
 }
@@ -23,4 +24,3 @@ export function HeaderTop({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
-

@@ -17,7 +17,7 @@ export function JobList({ jobItems, isLoading }: JobListProps) {
     <ul
       className="list bg-white relative min-h-[140px] flex flex-1 flex-col"
     >
-      {isLoading && <Spinner className="mt-20 mx-auto"/>}
+      {isLoading && <Spinner className="mt-20 mx-auto mb-20 md:mb-0"/>}
       {!isLoading &&
         jobItems.map((jobItem) => (
           <JobListItem

@@ -19,17 +19,17 @@ export default function SearchForm() {
   return (
     <form
       action="#"
-      className="relative mx-auto mt-5 w-[610px] animate-[intro_0.3s_0.1s_backwards]"
+      className="relative mx-auto mt-5 sm:w-[610px] w-[300px] animate-[intro_0.3s_0.1s_backwards] flex items-center justify-center"
       onSubmit={handleSubmit}
     >
       <button
         type="submit"
-        className="cursor-pointer absolute top-[17px] left-[25px]"
+        className="cursor-pointer absolute lg:top-[17px] lg:left-[25px] sm:top-[10px] sm:left-[70px] left-[20px]"
       >
         <FontAwesomeIcon
           icon={faMagnifyingGlass}
           className="transition-all duration-200 text-[rgba(0,0,0,0.73)] hover:text-[rgba(0,0,0,0.93)] focus:text-[rgba(0,0,0,0.93)]"
-          />
+        />
       </button>
       <input
         value={searchText}
@@ -38,8 +38,14 @@ export default function SearchForm() {
         type="text"
         required
         placeholder="Find remote developer jobs..."
-        className="h-14 
-        w-full rounded-[4px] 
+        className="
+        h-11
+        lg:h-14 
+        w-full 
+        max-w-lg
+        lg:max-w-[616px]
+        rounded-[4px] 
+        outline-none
         pl-[55px] pr-[15px] pb-[2px]
         text-[rgba(0,0,0,0.9)] 
         caret-[rgba(0,0,0,0.5)]
@@ -47,15 +53,9 @@ export default function SearchForm() {
         hover:bg-[rgba(255,255,255,1)]
         focus:bg-[rgba(255,255,255,1)]
         focus:shadow-[0_0_0_4px_rgba(255,255,255,0.4)] 
-
-          transition-all duration-200 
-          outline-none
-       
-
-
-          placeholder:text-[rgba(0,0,0,0.7)] 
-          placeholder:font-medium placeholder:text-[15px]
-            "
+        transition-all duration-200 
+        placeholder:text-[rgba(0,0,0,0.7)] 
+        placeholder:font-medium placeholder:text-[15px]"
         style={{
           transition: "box-shadow 0.1s"
         }}
@@ -63,4 +63,3 @@ export default function SearchForm() {
     </form>
   );
 }
-
