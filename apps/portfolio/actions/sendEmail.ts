@@ -27,7 +27,7 @@ export const sendEmail = async (formData: FormData) => {
     await resend.emails.send({
       // connect my own domain
       from: "Contact Form <onboarding@resend.dev>",
-      to: `${process.env.NEXT_PUBLIC_PERSONAL_EMAIL}`,
+      to: `${process.env.PERSONAL_EMAIL}`,
       subject: "Message from contact form",
       reply_to: senderEmail as string,
       react: React.createElement(ContactFormEmail, {
