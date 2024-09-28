@@ -18,7 +18,7 @@ export const Nav: FC<any> = () => {
   const { theme } = useTheme();
 
   const menuStyle = {
-    height: "calc(100vh - 3rem)",
+    height: "calc(100dvh - 3rem)",
     boxShadow:
       theme === "dark"
         ? "10px 0 15px -3px rgba(45, 50, 80, 0.9)"
@@ -67,7 +67,7 @@ export const Nav: FC<any> = () => {
             <FontAwesomeIcon icon={faHouse} />
             <span className="text-3xl font-medium font-mono">Home</span>
           </a>
-          <motion.ul className="flex flex-col gap-4 mt-4 justify-center items-center w-11/12 center py-3 bg-[#e8e8e8]/20 rounded-lg">
+          <motion.ul className="flex flex-col gap-4 my-4 justify-center items-center w-11/12 center py-3 bg-[#e8e8e8]/20 rounded-lg">
             <motion.li className="hover:bg-[#6aa4f4] text-peach dark:hover:bg-peach/90 dark:hover:text-white dark:text-[#d7e6fa] w-60 h-12 rounded-md font-mono flex items-center justify-center cursor-pointer">
               Show Numbers&nbsp;
               <input

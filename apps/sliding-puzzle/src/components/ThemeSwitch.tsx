@@ -10,8 +10,7 @@ export default function ThemeSwitch() {
     <Horizon
       placeholder=""
       className="
-        absolute bottom-5 right-5 
-        w-[3rem] h-[3rem] text-3xl 
+        w-[3rem] h-[3rem] text-3xl mt-auto mb-5 ml-auto mr-5
        text-[#ffe668] dark:text-[#F6B17A] 
         bg-transparent bg-opacity-80 
         backdrop-blur-[0.5rem]  
