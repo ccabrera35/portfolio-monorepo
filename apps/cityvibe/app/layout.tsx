@@ -9,7 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "CityVibe - Find events around you",
-  description: "Browse more than 10,000 events worldwide"
+  description: "Browse more than 10,000 events worldwide",
+  icons: {
+    icon: "/cityvibe-favicon.ico"
+  }
 };
 
 export default function RootLayout({
@@ -19,7 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-900 text-white overflow-y-scroll`}>
+      <head>
+        <link rel="icon" href="/cityvibe-favicon.ico" />
+      </head>
+      <body
+        className={`${inter.className} bg-gray-900 text-white overflow-y-scroll`}
+      >
         <Container>
           <Header />
           {children}

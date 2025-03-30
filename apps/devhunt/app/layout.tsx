@@ -16,7 +16,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "DevHunt",
-  description: "Find your next software engineering job."
+  description: "Find your next software engineering job.",
+  icons: {
+    icon: "/devhunt-favicon.ico"
+  }
 };
 
 export default function RootLayout({
@@ -26,7 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} leading-snug bg-[#dee3e9] text-[rgb(22, 24, 28)] min-h-screen relative`}>
+      <head>
+        <link rel="icon" href="/devhunt-favicon.ico" />
+      </head>
+      <body
+        className={`${inter.className} leading-snug bg-[#dee3e9] text-[rgb(22, 24, 28)] min-h-screen relative`}
+      >
         <QueryProvider>
           <BookmarksContextProvider>
             <ActiveIdContextProvider>
